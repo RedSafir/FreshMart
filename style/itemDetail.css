@@ -1,0 +1,250 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+h3, h2, h1, a, p{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.checked{
+    color: yellow;
+}
+
+.wrapper{
+    margin: 0 20px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    gap: 5.38px;
+    border-radius: 2.15px;
+    text-decoration: none;
+}
+
+.dark{
+    color: white;
+    background-color: #00995A;;
+}
+
+.light{
+    color: #00995A;
+    border: 1px solid #00995A;
+}
+
+/* barang */
+.barang-container{
+    display: flex;
+}
+
+.barang-img{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deskripsi-barang{
+    flex: 2;
+    display: flex;
+    flex-flow: column;
+    gap: 25px;
+}
+
+.barang-img img{
+    width: 300.19px;
+}
+
+.tombol{
+    margin-top: 100px;
+    display: flex;
+    gap: 16px;
+}
+
+.deskripsi-barang .nama-barang{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 0.104918px;
+}
+
+.deskripsi-barang .penjual-barang{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.104918px;
+}
+
+.rating .q-and-a-review, .rating .q-and-a{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.104918px;
+}
+
+.rating .total-review{
+    border-right: 3px solid black;
+}
+
+.status-container .status{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.104918px;
+    color: #3BB77E;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black ;
+    padding: 3px 0;
+}
+
+.deskripsi-barang .deskripsi{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.104918px;
+}
+
+.deskripsi-barang .penjelasan-barang{
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.218499px;
+    color: #757575;
+}
+
+/* Frequently Bought Togerher */
+.explore-categories{
+    height: 275px;
+}
+
+.explore-categories .head-explore-categories{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}   
+
+.head-explore-categories h2{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 32.398px;
+    margin: 0;
+    padding: 0;
+}
+
+.head-explore-categories ul{
+    display: flex;
+    gap: 20px;
+}
+
+.head-explore-categories ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.container-explore-categories{
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.categories-item{
+    background: #FFFFFF;
+    border: 1px solid #ADADAD;
+    border-radius: 17.2114px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16.199px;
+    letter-spacing: 0.121492px;
+}
+
+.explore-item-container{
+    display: flex;
+    gap: 40px;
+}
+
+.row{
+    display: flex;
+}
+
+.row img{
+    cursor: pointer;
+}
+
+/* Featured Product */
+.featured-product{
+    margin-top: 100px;
+}
+
+.featured-product .head-featured-product{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.head-featured-product h2{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 32.398px;
+    margin: 0;
+    padding: 0;
+}
+
+.feature-item-container{
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+}
+
+.feature-item{
+    background: #FFFFFF;
+    border: 1px solid #ADADAD;
+    border-radius: 16.199px;
+    padding: 1rem;
+}
+
+.feature-item *{
+    margin-top: 5px;
+}
+
+.feature-item-container img{
+    width: 158.61px;
+}
+
+.feature-item-container h3{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 14.1741px;
+    display: flex;
+    align-items: center;
+}
+
+.feature-item-container p{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 12.1492px;
+    color: #00AB67;
+}
+
+.feature-item-container p span{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 7.08705px;
+    line-height: 9px;
+    color: #757575;
+}
+
+
