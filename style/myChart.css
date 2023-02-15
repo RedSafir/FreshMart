@@ -1,0 +1,399 @@
+*,*::after, *::before{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,p, div, span{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F0F0F0;;
+}
+
+.wrapper{
+    margin: 0 20px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    gap: 5.38px;
+    border-radius: 2.15px;
+    text-decoration: none;
+}
+
+.dark, .btn.dark a{
+    color: white;
+    background-color: #00995A;
+    text-decoration: none;
+}
+
+.light, a.btn.light{
+    color: #00995A;
+    border: 1px solid #00995A;
+    text-decoration: none;
+}
+
+
+/* chart */
+.my-chart{
+    margin-top: 20px;
+}
+
+.text-chart{
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 32.398px;
+}
+
+.my-chart-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.chart-items{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    grid-template-rows: 100%;
+}
+
+.chart-item{
+    display: flex;
+    flex-flow: column;
+    border: 2.17778px solid #FFFFFF;
+    background-color: white;
+    border-radius: 23.9556px;
+    padding: 10px;
+    height: 180px;
+}
+
+.item-content{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.chart-img{
+    flex: 1;
+}
+
+.chart-img img{
+    width: 100px;
+}
+
+.item-desc{
+    width: 400px;
+    display: flex;
+    flex-flow: column;
+    margin: 10px;
+}
+
+.item-desc *{
+    margin-top: 10px;
+}
+
+.item-desc .nama-item{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 30.4889px;
+    letter-spacing: 0.261333px;
+}
+
+.item-desc .kuantitas-item{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.261333px;
+    color: #757575;
+}
+
+.harga-content{
+    display: flex;
+    flex-flow: column;
+    align-items: end;
+    justify-content:start;
+    gap: 20px;
+}
+
+.harga-content img{
+    width: 20px;
+    display: inline-block;
+}
+
+.harga-content .harga{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 26.1333px;
+    letter-spacing: 0.261333px;
+    color: #000000;
+}
+
+.chart-pembayaran{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.chart-pembayaran .chart-total-harga{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.261333px;
+    color: #757575;
+}
+
+.chart-pembayaran .harga-keseluruhan{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.261333px;
+    color: #0A0A0A;
+}
+
+.chart-pembayaran .kuantitas{
+    display: flex;
+    gap: 20 px;
+}
+
+.chart-pembayaran .add-to{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15   px;
+    letter-spacing: 0.261333px;
+    color: #757575;
+}
+
+.chart-pembayaran .jumlah{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.261333px;
+}
+
+.kuantitas{
+    display: flex;
+    gap: 10px;
+    align-content: center;
+}
+
+.kuantitas .kuantitas-btn{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    border-radius: 6.53333px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pembayaran */
+.ringkasan-pembayaran-container{
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 23.96px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.ringkasan-pembayaran-container .ringkasan-pembayaran{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 19.0569px;
+    letter-spacing: 0.190569px;
+}
+
+.ringkasan-pembayaran-container .total-tagihan{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.190569px;
+    margin-top: 20px;
+}
+
+.ringkasan-pembayaran-container .biaya-layanan{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.190569px;
+}
+
+.total-tagihan{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.biaya-layanan{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ringkasan-pembayaran-btn{
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+}
+
+/* recomendation */
+.explore-categories{
+    height: 275px;
+}
+
+.explore-categories .head-explore-categories{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}   
+
+.head-explore-categories h2{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 32.398px;
+    margin: 0;
+    padding: 0;
+}
+
+.head-explore-categories ul{
+    display: flex;
+    gap: 20px;
+}
+
+.head-explore-categories ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.container-explore-categories{
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.categories-item{
+    background: #FFFFFF;
+    border: 1px solid #ADADAD;
+    border-radius: 17.2114px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16.199px;
+    letter-spacing: 0.121492px;
+}
+
+.explore-item-container{
+    display: flex;
+    gap: 40px;
+}
+
+.row{
+    display: flex;
+}
+
+.row img{
+    cursor: pointer;
+}
+
+/* Featured Product */
+.head-daily-best{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.head-daily-best h2{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Quicksand';   
+    font-weight: 600;
+    font-size: 32.398px;
+}
+
+.daily-best-item-container{
+    display: flex;
+    margin-top: 60px;
+    gap: 10px;
+}
+
+.daily-best-item img{
+    width: 176.62px;
+}
+
+.daily-best-item{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 1.01244px solid rgba(173, 173, 173, 0.25);
+    border-radius: 3.03731px;
+    padding: 10px;
+}
+
+.daily-best-item h3{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 16.199px;
+    color: #253D4E;
+    margin: 0 0 10px 0;
+}
+
+.harga-daily-best{
+    margin: 10px 0;
+    display: flex;
+}
+
+.harga-daily-best p{
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 15   px; 
+    color: #009959;
+    padding: 0;
+    margin: 0;
+}
+
+.harga-daily-best span{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 12px;
+    color: #757575;
+}
+
+.daily-best-btn img{
+    width: 12.15px;
+}   
+
+.daily-best-btn{
+    height: 40.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2.02487px;
+    gap: 5.06px;
+}
+
+.daily-best-btn a{
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 14.1741px;
+    color: #FFFFFF;
+    text-decoration: none;
+    outline: none;
+    margin-left: 5px;
+}
