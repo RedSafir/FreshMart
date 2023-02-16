@@ -25,6 +25,11 @@ body{
     gap: 5.38px;
     border-radius: 2.15px;
     text-decoration: none;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 10px;
 }
 
 .dark, .btn.dark a{
@@ -52,15 +57,17 @@ body{
 }
 
 .my-chart-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 150px;
     justify-content: space-between;
     margin-top: 50px;
 }
 
 .chart-items{
     display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-rows: 100%;
+    grid-auto-rows: 1fr;
     gap: 20px;
 }
 
@@ -88,9 +95,10 @@ body{
 }
 
 .item-desc{
-    width: 400px;
+    width: 100%;
     display: flex;
     flex-flow: column;
+    align-items: start;
     margin: 10px;
 }
 
@@ -122,7 +130,7 @@ body{
 }
 
 .harga-content img{
-    width: 10px;
+    width: 30%;
     display: inline-block;
 }
 
@@ -131,7 +139,7 @@ body{
     font-weight: 600;
     font-size: 15px;
     letter-spacing: 0.261333px;
-    color: #000000;
+    width: 80px;
 }
 
 .chart-pembayaran{
@@ -237,10 +245,22 @@ body{
     justify-content: space-between;
 }
 
+.tagihan h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.952846px;
+}
+
 .ringkasan-pembayaran-btn{
     border-radius: 30px;
     border: none;
     text-decoration: none;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.952846px;
 }
 
 /* recomendation */
@@ -308,6 +328,49 @@ body{
 
 .row img{
     cursor: pointer;
+}
+
+/* Voucher */
+.daily-best{
+    margin-top: 100px;
+}
+
+.discount-voucher{
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.discount-voucher .discount-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+.redeem-voucher{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.redeem-voucher h3{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.260991px;
+}
+
+.redeem-voucher .persent{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #f2fbf8;
+    color: #009959;
+}
+
+.row-right{
+    display: flex;
+    justify-content: center;
 }
 
 /* Featured Product */
