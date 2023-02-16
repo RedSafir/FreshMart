@@ -13,6 +13,7 @@ body{
 
 .wrapper{
     margin: 0 20px;
+    display: block;
 }
 
 .btn{
@@ -47,7 +48,7 @@ body{
 .text-chart{
     font-family: 'Quicksand';
     font-weight: 700;
-    font-size: 32.398px;
+    font-size: 25px;
 }
 
 .my-chart-container{
@@ -58,9 +59,9 @@ body{
 
 .chart-items{
     display: grid;
-    grid-auto-flow: column;
     grid-auto-columns: 1fr;
     grid-template-rows: 100%;
+    gap: 20px;
 }
 
 .chart-item{
@@ -70,7 +71,7 @@ body{
     background-color: white;
     border-radius: 23.9556px;
     padding: 10px;
-    height: 180px;
+    height: 140px;
 }
 
 .item-content{
@@ -79,11 +80,11 @@ body{
 }
 
 .chart-img{
-    flex: 1;
+    width: 60px;
 }
 
 .chart-img img{
-    width: 100px;
+    width: 100%;
 }
 
 .item-desc{
@@ -93,14 +94,14 @@ body{
     margin: 10px;
 }
 
-.item-desc *{
+.item-desc h3{
     margin-top: 10px;
 }
 
 .item-desc .nama-item{
     font-family: 'Inter';
     font-weight: 600;
-    font-size: 30.4889px;
+    font-size: 20px;
     letter-spacing: 0.261333px;
 }
 
@@ -121,14 +122,14 @@ body{
 }
 
 .harga-content img{
-    width: 20px;
+    width: 10px;
     display: inline-block;
 }
 
 .harga-content .harga{
     font-family: 'Inter';
     font-weight: 600;
-    font-size: 26.1333px;
+    font-size: 15px;
     letter-spacing: 0.261333px;
     color: #000000;
 }
@@ -157,13 +158,13 @@ body{
 
 .chart-pembayaran .kuantitas{
     display: flex;
-    gap: 20 px;
+    gap: 10px;
 }
 
 .chart-pembayaran .add-to{
     font-family: 'Montserrat';
     font-weight: 400;
-    font-size: 15   px;
+    font-size: 15px;
     letter-spacing: 0.261333px;
     color: #757575;
 }
@@ -171,7 +172,7 @@ body{
 .chart-pembayaran .jumlah{
     font-family: 'Montserrat';
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 0.261333px;
 }
 
@@ -256,7 +257,7 @@ body{
 .head-explore-categories h2{
     font-family: 'Quicksand';
     font-weight: 600;
-    font-size: 32.398px;
+    font-size: 25px;
     margin: 0;
     padding: 0;
 }
@@ -292,7 +293,7 @@ body{
     text-align: center;
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 16.199px;
+    font-size: 10px;
     letter-spacing: 0.121492px;
 }
 
@@ -323,7 +324,7 @@ body{
     padding: 0; 
     font-family: 'Quicksand';   
     font-weight: 600;
-    font-size: 32.398px;
+    font-size: 25px;
 }
 
 .daily-best-item-container{
@@ -332,8 +333,12 @@ body{
     gap: 10px;
 }
 
-.daily-best-item img{
-    width: 176.62px;
+.daily-best-item-img{
+    text-align: center;
+}
+
+.daily-best-item-img img{
+    width: 100px;
 }
 
 .daily-best-item{
@@ -348,7 +353,7 @@ body{
 .daily-best-item h3{
     font-family: 'Quicksand';
     font-weight: 600;
-    font-size: 16.199px;
+    font-size: 15px;
     color: #253D4E;
     margin: 0 0 10px 0;
 }
@@ -361,7 +366,7 @@ body{
 .harga-daily-best p{
     font-family: 'Quicksand';
     font-weight: 700;
-    font-size: 15   px; 
+    font-size: 15px; 
     color: #009959;
     padding: 0;
     margin: 0;
@@ -370,7 +375,7 @@ body{
 .harga-daily-best span{
     font-family: 'Inter';
     font-weight: 600;
-    font-size: 12px;
+    font-size: 10px;
     color: #757575;
 }
 
