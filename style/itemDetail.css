@@ -2,18 +2,23 @@
     box-sizing: border-box;
 }
 
-h3, h2, h1, a, p{
+h4, h3, h2, h1, a, p, span{
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
 .checked{
-    color: yellow;
+    color: #F1C644;
 }
 
 .wrapper{
     margin: 0 20px;
+    display: block;
+}
+
+body{
+    background: #F7F7F7;
 }
 
 .btn{
@@ -37,6 +42,11 @@ h3, h2, h1, a, p{
     border: 1px solid #00995A;
 }
 
+.in-active{
+    color: black;
+    border: 1px solid black;
+}
+
 /* barang */
 .barang-container{
     display: flex;
@@ -47,21 +57,24 @@ h3, h2, h1, a, p{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
 .deskripsi-barang{
     flex: 2;
     display: flex;
     flex-flow: column;
-    gap: 25px;
+    gap: 15px;
+    margin-right: 150px;
+    margin-left: 10px;
 }
 
 .barang-img img{
-    width: 300.19px;
+    width: 150px;
 }
 
 .tombol{
-    margin-top: 100px;
+    margin-top: 60px;
     display: flex;
     gap: 16px;
 }
@@ -107,17 +120,19 @@ h3, h2, h1, a, p{
     font-weight: 600;
     font-size: 15px;
     letter-spacing: 0.104918px;
+    margin-top: 20px;
 }
 
 .deskripsi-barang .penjelasan-barang{
     font-family: 'Quicksand';
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
     letter-spacing: 0.218499px;
     color: #757575;
+    margin-top: 10px;
 }
 
-/* Frequently Bought Togerher */
+/* Recomendation */
 .explore-categories{
     height: 275px;
 }
@@ -131,7 +146,7 @@ h3, h2, h1, a, p{
 .head-explore-categories h2{
     font-family: 'Quicksand';
     font-weight: 600;
-    font-size: 32.398px;
+    font-size: 25px;
     margin: 0;
     padding: 0;
 }
@@ -198,7 +213,7 @@ h3, h2, h1, a, p{
 .head-featured-product h2{
     font-family: 'Quicksand';
     font-weight: 600;
-    font-size: 32.398px;
+    font-size: 30px;
     margin: 0;
     padding: 0;
 }
@@ -212,7 +227,7 @@ h3, h2, h1, a, p{
 .feature-item{
     background: #FFFFFF;
     border: 1px solid #ADADAD;
-    border-radius: 16.199px;
+    border-radius: 15px;
     padding: 1rem;
 }
 
@@ -227,7 +242,7 @@ h3, h2, h1, a, p{
 .feature-item-container h3{
     font-family: 'Inter';
     font-weight: 600;
-    font-size: 14.1741px;
+    font-size: 15px;
     display: flex;
     align-items: center;
 }
@@ -247,4 +262,253 @@ h3, h2, h1, a, p{
     color: #757575;
 }
 
+/* discussion */
+.discussion-container{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
 
+.discussion-container .write-discussion{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+.text-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-container .discussion-container-text{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.text-container .see-all-text{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.004em;
+    color: #00AB67;
+}
+
+.write-discussion .text-discussion{
+    display: flex;
+    align-items: center;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 20px;
+    gap: 30px;
+}
+
+.write-discussion .img-text-discussion{
+    width: 60px;
+    height: 60px;
+}
+
+.write-discussion .discussion-btn{
+    display: inline-block;
+    padding: 5px 60px;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.discussion-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.discussion-item{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    background-color: white;
+}
+
+.discussion-item .discussion-item-img{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discussion-item-img img{
+    width: 60%;
+    margin: 10px;
+}
+
+.discussion-item .discussion-content{
+    display: flex;
+    justify-content: start;
+    flex-flow: column;
+    gap: 10px;
+    align-items: start;
+}
+
+.discussion-content .nama-discussion{
+    margin-top: 10px;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.discussion-content .discussion-question{
+    margin-top: 10px;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/* review */
+.review-container{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
+.review-container .review-container-text{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 20px 0;
+}
+
+.review-container-text .review-text{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.review-container-text .see-all-review{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.004em;
+    color: #00AB67;
+}
+
+.review-container .review-rate{
+    display: flex;
+    gap: 200px;
+    align-items: center;
+}
+
+.review-rate .review-rate-star{
+    display: flex;
+    gap: 20px;
+}
+
+.review-rate .review-rate-score{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.review-rate-star .btn{
+    padding: 3px 20px;
+    margin: 0;
+    display: inline-block;
+    font-family: 'Quicksand';
+    font-weight: 600;
+}
+
+.review-container .rating{
+    display: flex;
+    gap: 10px;
+}
+
+.rating-review{
+    font-size: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.review-container .review-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.review-item{
+    background: #FFFFFF;
+    border: 1px solid #667085;
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.review-item .profile-review{
+    display: flex;
+}
+
+.profile-review .pict-review{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.pict-review img{
+    width: 70%;
+}
+
+.profile-review .desc-profile{
+    width: 80%;
+}
+
+.desc-profile *{
+    padding: 5px 0;
+}
+
+.desc-profile .desc-profile-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc-profile-container .desc-profile-nama{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.desc-profile-container .desc-profile-rilis{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    color: #757575;
+}
+
+.desc-profile .desc-profile-rating{
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.review-item .review-content{
+    display: flex;
+    margin:10px 0;
+}
+
+.review-content .text-review{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.review-item .imgs-review-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-top: 10px;
+}

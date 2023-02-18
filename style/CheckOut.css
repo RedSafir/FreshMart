@@ -1,0 +1,331 @@
+*,*::after, *::before{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,p, div, span{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F0F0F0;;
+}
+
+.wrapper{
+    margin: 0 20px;
+    display: block;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    gap: 5.38px;
+    border-radius: 2.15px;
+    text-decoration: none;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 10px;
+}
+
+.dark, a.btn.dark{
+    color: white;
+    background-color: #00995A;
+}
+
+.light, a.btn.light{
+    color: #00995A;
+    border: 1px solid #00995A;
+}
+
+.white, a.btn.white{
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Checkout */
+.my-chart{
+    margin-top: 20px;
+}
+
+.my-chart .text-check-out{
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.text-chart{
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.my-chart-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 150px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.checkout-desc .text-checkout-desc{
+    margin-bottom: 20px;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.address-user{
+    padding: 10px;
+}
+
+.address-border{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.address-content{
+    background-color: white;
+    border-radius: 30px;    
+    padding: 15px 15px;
+    margin: 15px 0;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+.button-address{
+    margin: 10px 0;
+}
+
+.address-user .duration{
+    background: #FFFFFF;
+    border: 2px solid #EDEDED;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.duration h2{
+    margin-bottom: 20px;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.tanggal-container{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.tanggal-container .tanggal{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 20px;
+}
+
+/* Pembayaran */
+.ringkasan-pembayaran-container{
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 23.96px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.ringkasan-pembayaran-container .ringkasan-pembayaran{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 19.0569px;
+    letter-spacing: 0.190569px;
+}
+
+.ringkasan-pembayaran-container .total-tagihan{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.190569px;
+    margin-top: 20px;
+}
+
+.ringkasan-pembayaran-container .biaya-layanan{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.190569px;
+}
+
+.total-tagihan{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.biaya-layanan{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tagihan h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.952846px;
+}
+
+.ringkasan-pembayaran-btn{
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.952846px;
+}
+
+/* recomendation */
+.head-daily-best{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.head-daily-best h2{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Quicksand';   
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.daily-best-item-container{
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.chart-items{
+    display: grid;
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.chart-item{
+    display: flex;
+    flex-flow: column;
+    border: 2.17778px solid #FFFFFF;
+    background-color: white;
+    border-radius: 23.9556px;
+    padding: 10px;
+    height: 140px;
+}
+
+.item-content{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.chart-img{
+    width: 100px;
+}
+
+.chart-img img{
+    width: 100%;
+}
+
+.item-desc{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    margin: 10px;
+}
+
+.item-desc h3{
+    margin-top: 10px;
+}
+
+.item-desc .nama-item{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.261333px;
+}
+
+.item-desc .kuantitas-item{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.261333px;
+    color: #757575;
+}
+
+.harga-content{
+    display: flex;
+    flex-flow: column;
+    align-items: end;
+    justify-content:center;
+    gap: 20px;
+}
+
+.harga-content .harga{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.261333px;
+    width: 80px;
+}
+
+.chart-pembayaran{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.chart-pembayaran .chart-total-harga{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.261333px;
+    color: #757575;
+}
+
+.chart-pembayaran .harga-keseluruhan{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.261333px;
+    color: #0A0A0A;
+}
+
+.chart-pembayaran .jumlah-barang{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 20px;
+    color: #009959;
+}
+
+

@@ -130,7 +130,7 @@ body{
 }
 
 .harga-content img{
-    width: 30%;
+    padding: .35px;
     display: inline-block;
 }
 
