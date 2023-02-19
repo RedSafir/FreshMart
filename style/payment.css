@@ -1,0 +1,190 @@
+*,*::after, *::before{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,p, div, span{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F0F0F0;
+}
+
+.wrapper{
+    margin: 0 20px;
+    display: block;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    gap: 5.38px;
+    border-radius: 2.15px;
+    text-decoration: none;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 10px;
+}
+
+.dark, .btn.dark a{
+    color: white;
+    background-color: #00995A;
+    text-decoration: none;
+}
+
+.light, a.btn.light{
+    color: #00995A;
+    border: 1px solid #00995A;
+    text-decoration: none;
+}
+
+
+.white{
+    background-color: #757575;
+    color: white;
+}
+
+/* chart */
+.my-chart{
+    margin-top: 20px;
+}
+
+.text-chart{
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.my-chart-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 150px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.chart-items{
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+}
+
+.payment-item{
+    background-color: white;
+    display: flex;
+    padding: 30px 20px;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.payment-item:hover{
+    border: 2px solid #00995A;
+}
+
+.payment-content{
+    display: flex;
+    gap: 10px;  
+}
+
+.circle{
+    background-color:#F0F0F0;
+    border-radius: 50%;
+    width: 5%;
+    height: 30px;
+}
+
+.payment-item img{
+    width: 80px;
+}
+
+/* Pembayaran */
+.ringkasan-pembayaran-container{
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 23.96px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.ringkasan-pembayaran-container .ringkasan-pembayaran{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 19.0569px;
+    letter-spacing: 0.190569px;
+}
+
+.ringkasan-pembayaran-container .total-tagihan{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.190569px;
+    margin-top: 20px;
+}
+
+.ringkasan-pembayaran-container .biaya-layanan{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.190569px;
+}
+
+.total-tagihan{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.biaya-layanan{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+.total-harga{
+    margin: 5px 0 10px 0;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.tagihan{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.952846px;
+}
+
+.ringkasan-pembayaran-btn{
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.952846px;
+}
+
+.harga-tagihan{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.190569px;
+}
+

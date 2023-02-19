@@ -1,0 +1,300 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F7F7F7;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, form, input, p{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    margin: 0 20px;
+    display: block;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
+    gap: 5.38px;
+    border-radius: 2.15px;
+    text-decoration: none;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 10px;
+    border: 1px solid black;
+    color: black;
+    align-items: center;
+}
+
+.dark{
+    color: white;
+    background-color: #00995A;
+}
+
+.light{
+    color: #00995A;
+    border: 1px solid #00995A;
+}
+
+.white{
+    color: white;
+    border: 1px solid white;
+}
+
+.btn.incomplete{
+    background: linear-gradient(0deg, rgba(203, 58, 49, 0.2), rgba(203, 58, 49, 0.2)), #FFFFFF;
+    border: 0.764706px solid #CB3A31;   
+    color: red;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Dashbord */
+.list-pesanan-container{
+    display: flex;
+    gap: 30px;
+}
+
+.dashbord-container{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}   
+
+.dashbord-container .dashbord-content{
+    width: 60%;
+    border: 1px solid black;
+    background-color: white;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.dashbord-content .dashbord-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.dashbord-profile .dashbord-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 5px 0;
+    flex-wrap: wrap;
+}
+
+.dashbord-img img{
+    width: 60%;
+}
+
+.dashbord-profile .profile-nama{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.dashbord-content .dashbord-nav{
+    display: flex;
+    flex-flow: column;
+    gap:5px;
+    margin: 5px 10px;
+}
+
+.dashbord-nav .nav-ping:hover{
+    background-color: #00995A;
+    color: white;
+}
+
+.dashbord-nav .nav-ping{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5%;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+}
+
+/* list pesanan */
+.list-order-container{
+    width: 50%;
+}
+
+.list-order-container .freshpay-content{
+    display: flex;
+    gap: 10px 0;
+    flex-flow: column;
+    padding: 10px;
+}
+
+.freshpay-text{
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.freshpay-content .nav-freshpay{
+    background-color: green;
+    padding: 10px 5px 40px 5px;
+    border-radius: 10px;
+}
+
+.nav-freshpay .nav-text-freshpay{
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.nav-freshpay .group-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.group-nav .nav-wallet{
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF; 
+    padding: 0 10px;
+}
+
+.freshpay-content .action-freshpay{
+    background-color: blue;
+    position: relative;
+}
+
+.action-item{
+    width: fit-content;
+    background: #FFFFFF;
+    border: 0.859091px solid #757575;
+    box-shadow: 0px 3.43636px 3.43636px rgba(0, 0, 0, 0.25);
+    border-radius: 8.59091px;
+    display: inline-block;
+    position: absolute;
+    padding: 5px 20px;
+}
+
+.left{
+    left: 15%;
+    top: -40px;
+}
+
+.right{
+    right: 15%;
+    top: -40px;
+}
+
+.action-item .information-text, .action-item .coin-com, .action-item .paylater-com{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.information-text{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.information-com{
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 15px;
+    color: #757575;
+}
+
+.information-action{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 15px;
+    color: #00AB67;
+}
+
+.freshpay-content .important-freshpay{
+    margin-top: 35px;
+}
+
+.important-freshpay .action-text{
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.important-freshpay .action-information{
+    margin-top: 10px;
+    padding: 5px 30px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.coin-img{
+    width: 15px;
+}
+
+.information-com{
+    margin-top: 5px;
+}
+
+.information-action{
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.freshpay-content .exciting-freshpay{
+    margin-top: 20px;
+}
+
+.exciting-freshpay .exciting-text{
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.promo-slidebar{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.row{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-freshpay{
+    flex: 4;
+}
+
+/* ringkasan pembayaran */
+.ringkasan-pembayaran-container{
+    width: 400px;
+    height: 100px;
+}

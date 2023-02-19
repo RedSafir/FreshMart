@@ -1,0 +1,147 @@
+*,*::after, *::before{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,p, div, span{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F0F0F0;;
+}
+
+.wrapper{
+    margin: 0 20px;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    gap: 5.38px;
+    border-radius: 2.15px;
+    text-decoration: none;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 10px;
+}
+
+.dark, .btn.dark a{
+    color: white;
+    background-color: #00995A;
+    text-decoration: none;
+}
+
+.light, a.btn.light{
+    color: #00995A;
+    border: 1px solid #00995A;
+    text-decoration: none;
+    background-color: white;
+}
+
+.white{
+    background-color: #757575;
+    color: white;
+}
+
+/* Recipt detail */
+.recipt-detail-container .recipt-detail-text{
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.recipt-detail-container .recipt-detail-content{
+    display: flex;
+}
+
+.recipt-detail-content .content-img{
+    /* background-color: red; */
+    align-items: start;
+    display: flex;
+    padding: 10px;  
+    width: 30%;
+    margin-top: 20px;
+}
+
+.content-img img{
+    width: 100%;
+}
+
+.recipt-detail-content .content-desc{
+    /* background-color: green; */
+    margin-top: 20px;
+    padding: 10px;
+    width: 60%;
+}
+
+.desc-atas .desc-nama-masakan{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.desc-atas .desc-deskripsi{
+    margin: 10px 0;
+    font-family: 'Quicksand';   
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.104918px;
+}
+
+.desc-atas .desc-penjelasan{
+    margin: 10px 0;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 18px;
+    color: #757575;
+    font-style: italic;
+}
+
+.desc-atas .atas-action{
+    display: flex;
+    /* background-color: lightblue; */
+    margin-top: 20px;
+    margin-left: 30px;
+    gap: 30px;
+    padding: 5px;
+}
+
+.atas-action *{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+}
+
+.atas-action *:hover{
+    border-bottom: 5px solid green;
+}
+
+.content-desc .desc-bawah{
+    /* background-color: yellow; */
+    border-top: 1px solid #BDBDBD;
+}
+
+.desc-bawah .bawah-resep{
+    font-family: 'Quicksand';
+    font-weight: 500;
+    color: #757575;
+}
+
+.content-desc .desc-action{
+    display: flex;
+    /* background-color: blue; */
+    margin-top: 10px;
+    gap: 20px;
+}

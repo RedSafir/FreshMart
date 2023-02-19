@@ -1,0 +1,148 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,p,ul,li {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F0F0F0;;
+}
+
+.wrapper{
+    margin: 0 20px;
+    display: block;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    gap: 5.38px;
+    border-radius: 2.15px;
+    text-decoration: none;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 10px;
+}
+
+.dark, .btn.dark a{
+    color: white;
+    background-color: #00995A;
+    text-decoration: none;
+}
+
+.light, a.btn.light{
+    color: #00995A;
+    border: 1px solid #00995A;
+    text-decoration: none;
+}
+
+/* waiting for payment */
+.waiting-for-payment-container{
+    display: flex;
+    flex-flow: column;
+    margin-top: 30px;
+}
+
+.text-waiting-for-payment{
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.waiting-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.waiting-item{
+    background-color: white;
+    border-radius: 5%;
+}
+
+.waiting-item .waiting-content{
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.waiting-content li{
+    list-style: none;
+}
+
+.due-to{
+    text-align: center;
+}
+
+.due-to .due-to-text{
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.due-to .due-to-date{
+    margin: 10px 0;
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.payment-methode{
+    text-align: center;
+}
+
+.payment-methode .payment-methode-text{
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.transaction-id{
+    text-align: center;
+}
+.transaction-id .transaction-id-text{
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.transaction-id .transaction-id-number{
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 25px;
+    color: #00AB67;
+}
+
+.total-payment{
+    text-align: center;
+}
+
+.total-payment .total-payment-text{
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.total-payment .total-payment-number{
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 25px;
+    color: #00AB67;
+}
+
+.payment-btn{
+    border-radius: 10px;
+    width: 100%;
+}
