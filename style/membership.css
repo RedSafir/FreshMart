@@ -1,0 +1,215 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F7F7F7;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, form, input, p, ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    margin: 0 20px;
+    display: block;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
+    gap: 5.38px;
+    border-radius: 2.15px;
+    text-decoration: none;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 10px;
+    border: 1px solid black;
+    color: black;
+    align-items: center;
+}
+
+.dark{
+    color: white;
+    background-color: #00995A;
+}
+
+.light{
+    color: #00995A;
+    border: 1px solid #00995A;
+}
+
+.white{
+    color: white;
+    border: 1px solid white;
+}
+
+.btn.incomplete{
+    background: linear-gradient(0deg, rgba(203, 58, 49, 0.2), rgba(203, 58, 49, 0.2)), #FFFFFF;
+    border: 0.764706px solid #CB3A31;   
+    color: red;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Dashbord */
+.list-pesanan-container{
+    display: flex;
+    gap: 30px;
+}
+
+.dashbord-container{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}   
+
+.dashbord-container .dashbord-content{
+    width: 60%;
+    border: 1px solid black;
+    background-color: white;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.dashbord-content .dashbord-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.dashbord-profile .dashbord-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 5px 0;
+    flex-wrap: wrap;
+}
+
+.dashbord-img img{
+    width: 60%;
+}
+
+.dashbord-profile .profile-nama{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.dashbord-content .dashbord-nav{
+    display: flex;
+    flex-flow: column;
+    gap:5px;
+    margin: 5px 10px;
+}
+
+.dashbord-nav .nav-ping:hover{
+    background-color: #00995A;
+    color: white;
+}
+
+.dashbord-nav .nav-ping{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5%;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+}
+
+/* membership */
+.list-order-container{
+    width: 70%;
+}
+
+.text-waiting-for-payment{
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.waiting-items{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.membership-item{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    gap: 20px;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 10px 10px 5px 5px;
+}
+
+.membership-item .tipe{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.tipe .tipe-text{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.membership-item .keterangan-mem{
+    text-align: center;
+}
+
+.keterangan-mem .keterangan-text{
+    font-family: 'Quicksand';
+    font-weight: 700;
+    letter-spacing: 0.0038em;
+    line-height: 40px;
+    color: #000000;
+}
+
+.membership-item .btn-join{
+    width: 100% ;
+}
+
+
+.bronze{
+    background-color: brown;
+}
+
+.silver{
+    background-color: silver;
+}
+
+.gold{
+    background-color: gold;
+}

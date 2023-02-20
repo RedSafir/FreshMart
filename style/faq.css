@@ -1,0 +1,193 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F7F7F7;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, ul, li, form, input, p{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    margin: 0 20px;
+    display: block;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    gap: 5.38px;
+    border-radius: 2.15px;
+    text-decoration: none;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 10px;
+    border: 1px solid black;
+    color: black;
+    align-items: center;
+}
+
+.dark{
+    color: white;
+    background-color: #00995A;
+}
+
+.light{
+    color: #00995A;
+    border: 1px solid #00995A;
+}
+
+.btn.incomplete{
+    background: linear-gradient(0deg, rgba(203, 58, 49, 0.2), rgba(203, 58, 49, 0.2)), #FFFFFF;
+    border: 0.764706px solid #CB3A31;   
+    color: red;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Dashbord */
+.list-pesanan-container{
+    display: flex;
+    gap: 30px;
+}
+
+.dashbord-container{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}   
+
+.dashbord-container .dashbord-content{
+    width: 60%;
+    border: 1px solid black;
+    background-color: white;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.dashbord-content .dashbord-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.dashbord-profile .dashbord-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 5px 0;
+    flex-wrap: wrap;
+}
+
+.dashbord-img img{
+    width: 60%;
+}
+
+.dashbord-profile .profile-nama{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.dashbord-content .dashbord-nav{
+    display: flex;
+    flex-flow: column;
+    gap:5px;
+    margin: 5px 10px;
+}
+
+.dashbord-nav .nav-ping:hover{
+    background-color: #00995A;
+    color: white;
+}
+
+.dashbord-nav .nav-ping{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5%;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+}
+
+/* list pesanan */
+.list-order-container{
+    width: 50%;
+}
+
+.head-faq{
+    display: flex;
+    gap:40px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.faq-text{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: -0.24px;
+}
+
+.faq-text:hover{
+    border-bottom: 2px solid green;
+}
+
+.faq-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-items{
+    list-style-type: none;
+    width:50%;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.faq-item{
+    display: flex;
+    gap:5px;    
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.faq-item img{
+    width: 15%;
+}
+
+.item{
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
